@@ -1,0 +1,276 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+.Login_Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Espacio uniforme entre los elementos */
+  padding: 2rem;
+  background-color: #f9f9f9; /* Fondo para destacar el formulario */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.Login_Page label{
+  color: cyan;
+  font-size: 10vh;
+}
+
+.Login_Page input {
+  width: 12vw; /* Ajustar el ancho */
+  height: 4vh; /* Ajustar la altura */
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.Login_Page label {
+  font-size: 1rem;
+  color: #333; /* Color más suave */
+}
+
+.Login_Page button {
+  width: 14vw;
+  padding: 0.7rem;
+  background-color: black; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.Login_Page button:hover {
+  background-color: gray; /* Efecto hover para el botón */
+}
+.Registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el formulario */
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.photo-box {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.photo-box input[type="file"] {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Register_button {
+  margin-top: 20px;
+  text-align: center; /* Para centrar el botón */
+  display: flex;
+  justify-content: center; /* Para centrar el botón dentro del contenedor */
+  width: 100%;
+}
+
+
+button:hover {
+  background-color: gray;
+}
+
+
+.Horizontal_Barra {
+  display: flex;
+  justify-content: left;
+  margin: 0 0 8vh 0;
+  background-color: aqua;
+  width: 100vw;
+  height: 13vh;
+  padding: 1vh 2vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 2vh;
+}
+
+.boton_barra {
+  background-color: #45a049;
+  border-radius: 1vh;
+  cursor: pointer;
+  border: none;
+  padding: 0.5vh 1vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 11.5vh;
+  width: 14.5vh; /* Asegura tamaño uniforme para los botones */
+  overflow: hidden; /* Evita que el contenido se salga */
+  flex-direction: column; /* Para organizar imagen y texto verticalmente */
+}
+
+
+/* Ajusta la grid con márgenes y espaciamiento correcto */
+.Main_Grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  gap: 2vh; /* Ajusta el espacio entre los elementos */
+  margin: 0 5vw; /* Añade margen a los lados del contenedor principal */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(20% - 2vh); /* Cada ítem ocupará el 20% del ancho del contenedor menos el espacio del gap */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  background-color: white;
+}
+
+.item_n {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(20% - 2vh); /* Cada ítem ocupará el 20% del ancho del contenedor menos el espacio del gap */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  background-color: white;
+}
+
+.foto_grid {
+  width: 20vh;
+  height: 20vh;
+}
+
+.nombre_boton {
+  text-align: center;
+  margin-top: 2vh; /* Ajusta el margen superior */
+  font-size: 1.5vh; /* Ajusta el tamaño de la fuente */
+  color: black;
+}
+
+.label {
+  color: white;
+}
+
+.foto_barra {
+  width: 7vh; /* Ajusta el tamaño de la imagen para que se mantenga dentro del botón */
+  height: 7vh;
+  object-fit: contain;
+}
+
+.notifnum {
+  position: absolute;
+  top: 90vh; /* Ajusta este valor según lo necesites */
+  right: 25vw; /* Ajusta este valor según lo necesites */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Estilo para la sección de usuario en la barra lateral */
+.usuario-info {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;  /* Margen a la izquierda */
+  margin-bottom: 20px;
+}
+
+.foto_usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nombre_usuario {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: right;  
+  margin-left: 40%;
+}
+
+.boton_barra span {
+  font-size: 1.5vh;
+  font-weight: bold;
+  white-space: nowrap; /* Evita que el texto se desborde */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+
+.foto_reg{
+  height: 13vh;
+  width: 7vw;
+}

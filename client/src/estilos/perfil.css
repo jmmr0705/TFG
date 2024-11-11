@@ -1,0 +1,49 @@
+.Perfil {
+    align-items: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+}
+
+.formul {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    background-color: #f9f9f9;
+    gap: 1rem;
+}
+
+.Titulo {
+    margin-bottom: 0.1vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.formul label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.formul input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    grid-column: span 2;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.7rem;
+}
